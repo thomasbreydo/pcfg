@@ -9,6 +9,7 @@ colorama==0.4.4; sys_platform == "win32"
 docutils==0.16
 idna==2.10
 imagesize==1.2.0
+importlib-metadata==3.1.1
 jinja2==2.11.2
 joblib==0.17.0
 markupsafe==1.1.1
@@ -35,3 +36,4 @@ sphinxcontrib-serializinghtml==1.1.4
 tqdm==4.54.1
 urllib3==1.26.2
 wcwidth==0.2.5
+zipp==3.4.0
