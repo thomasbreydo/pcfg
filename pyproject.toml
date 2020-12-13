@@ -10,6 +10,7 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = "^3.8"
 nltk = "^3.5"
+importlib-metadata = "^3.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
