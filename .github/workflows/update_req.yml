@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: "Update requirements.txt file using poetry"
+name: "Update requirements.txt using poetry"
 
 # Controls when the action will run. 
 on: [push, workflow_dispatch, pull_request]
@@ -16,14 +16,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - uses: abatilo/actions-poetry@v2.0.0
       
-      - name: Install poetry
-        uses: abatilo/actions-poetry@v2.0.0
-
-      # Runs a single command using the runners shell
       - name: Lock dependencies
         run: poetry lock
 
-      # Runs a set of commands using the runners shell
       - name: Generate requirements.txt file
-        run: poetry export --dev -o requirements.txt
+        run: poetry export --dev --without-hashes -o requirements.txt
