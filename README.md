@@ -1,26 +1,28 @@
 pcfg
-----
+====
+[![Documentation Status](https://readthedocs.org/projects/pcfg/badge/?version=latest)](https://pcfg.readthedocs.io/en/latest/?badge=latest)
+
 
 Description
-===========
+-----------
 
 Implement the ``generate_sentences()`` method for NLTK's [probabilistic context-free grammar](https://www.nltk.org/api/nltk.html#nltk.grammar.PCFG) to probabilistically generate valid sentences. (NLTK stands for Natural Language Toolkit.)
 
 Installation
-============
+------------
 
 ```zsh
 pip install pcfg
 ```
 
 Documentation
-=============
+-------------
 
 Read the latest documentation for **pcfg** [here](https://pcfg.readthedocs.io/).
 
 
 Example usage
-=============
+-------------
 
 A ``PCFG`` can be initialized in the same way that an NLTK [probabilistic context-free grammar](https://www.nltk.org/api/nltk.html#nltk.grammar.PCFG) is initialized:
 
@@ -51,5 +53,5 @@ a cow was here
 Of course, your output may be different because the sentences are generated probabilistically.
 
 License
-=======
+-------
 [MIT](https://github.com/thomasbreydo/pcfg/blob/master/LICENSE)

@@ -20,11 +20,3 @@ Welcome to pcfg's documentation!
 
    api_reference
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
