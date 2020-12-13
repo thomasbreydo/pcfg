@@ -33,11 +33,14 @@ class PCFG(nltk.grammar.PCFG):
         """
         sentence: List[str] = []
         symbol: Symbol
+        derivation: str
         for symbol in self._reduce_once(nonterminal):
             if isinstance(symbol, str):
-                sentence.append(symbol)
+                derivation = symbol
             else:
-                sentence.append(self._generate_derivation(symbol))
+                derivation = self._generate_derivation(symbol)
+            if derivation != "":
+                sentence.append(derivation)
         return " ".join(sentence)
 
     def _reduce_once(self, nonterminal: Nonterminal) -> Tuple[Symbol]:
