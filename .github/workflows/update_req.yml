@@ -23,4 +23,4 @@ jobs:
         run: poetry lock
 
       - name: Generate requirements.txt file
-        run: poetry export --dev --without-hashes -o requirements.txt
+        run: poetry export -f "requirements.txt" --dev --without-hashes -o requirements.txt
