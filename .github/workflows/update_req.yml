@@ -24,3 +24,10 @@ jobs:
 
       - name: Generate requirements.txt file
         run: poetry export -f "requirements.txt" --dev --without-hashes -o requirements.txt
+      
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Lock dependencies and update requirements.txt (auto)
+          commit_user_name: Thomas Breydo
+          commit_user_email: tbreydo@gmail.com
+
