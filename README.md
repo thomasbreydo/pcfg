@@ -6,7 +6,7 @@ pcfg
 Description
 -----------
 
-Implement the ``generate_sentences()`` method for NLTK's [probabilistic context-free grammar](https://www.nltk.org/api/nltk.html#nltk.grammar.PCFG) to probabilistically generate valid sentences. (NLTK stands for Natural Language Toolkit.)
+Implement the ``generate()`` method for NLTK's [probabilistic context-free grammar](https://www.nltk.org/api/nltk.html#nltk.grammar.PCFG) to probabilistically generate valid sentences. (NLTK stands for Natural Language Toolkit.)
 
 Installation
 ------------
@@ -35,11 +35,12 @@ A ``PCFG`` can be initialized in the same way that an NLTK [probabilistic contex
 ... """)
 ```
 
-To generate sentences, simply use the ``generate_sentences()`` method:
+To generate sentences, simply use the ``generate()`` method:
 
 ```python3
->>> for sentence in grammar.generate_sentences(3):
-...     print(sentence)
+>> > for sentence in grammar.generate(3):
+    ...
+print(sentence)
 ```
 
 The output could be the following:

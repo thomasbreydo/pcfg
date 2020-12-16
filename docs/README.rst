@@ -4,7 +4,7 @@
 Description
 ===========
 
-Implement the :meth:`~pcfg.PCFG.generate_sentences` method for NLTK's `probabilistic context-free grammar`_ to probabilistically generate valid sentences. (NLTK stands for Natural Language Toolkit.)
+Implement the :meth:`~pcfg.PCFG.generate` method for NLTK's `probabilistic context-free grammar`_ to probabilistically generate valid sentences. (NLTK stands for Natural Language Toolkit.)
 
 Installation
 ============
@@ -34,9 +34,19 @@ A :class:`~pcfg.PCFG` can be initialized in the same way that an NLTK `probabili
    ... Action -> "eats lunch" [0.5] | "was here" [0.5]
    ... """)
 
-To generate sentences, simply use the :meth:`~pcfg.PCFG.generate_sentences` method:
+To generate sentences, simply use the :meth:`~pcfg.PCFG.generate` method:
 
 .. code-block:: python3
+
+   >>> for sentence in grammar.generate(3):
+   ...     print(sentence)
+
+The output could be the following:
+
+   >>> for sentence in grammar.generate(3):
+   ...     print(sentence)
+
+The output could be the following:
 
    >>> for sentence in grammar.generate_sentences(3):
    ...     print(sentence)

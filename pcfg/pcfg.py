@@ -8,7 +8,7 @@ Symbol = Union[str, Nonterminal]
 
 
 class PCFG(nltk.grammar.PCFG):
-    def generate_sentences(self, n: int) -> Iterator[str]:
+    def generate(self, n: int) -> Iterator[str]:
         """Probabilistically, recursively reduce the start symbol `n` times,
         yielding a valid sentence each time.
 
