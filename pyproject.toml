@@ -5,6 +5,7 @@ description = "Generate sentences from a probabilistic context-free grammar."
 authors = ["Thomas Breydo <tbreydo@gmail.com>"]
 repository = "https://github.com/thomasbreydo/pcfg"
 license = "MIT"
+readme = "README.md"
 
 
 [tool.poetry.dependencies]
