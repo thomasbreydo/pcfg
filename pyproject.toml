@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pcfg"
-version = "0.1.3"
+version = "0.1.4"
 description = "Generate sentences from a probabilistic context-free grammar."
 authors = ["Thomas Breydo <tbreydo@gmail.com>"]
 repository = "https://github.com/thomasbreydo/pcfg"
