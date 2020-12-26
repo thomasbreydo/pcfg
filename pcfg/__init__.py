@@ -5,6 +5,6 @@ except ModuleNotFoundError:
 try:
     __version__ = importlib_metadata.version(__name__)
 except importlib_metadata.PackageNotFoundError:
-    __version__ = None
+    __version__ = ""
 
 from .pcfg import PCFG
