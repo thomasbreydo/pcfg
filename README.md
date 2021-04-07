@@ -38,9 +38,8 @@ A ``PCFG`` can be initialized in the same way that an NLTK [probabilistic contex
 To generate sentences, simply use the ``generate()`` method:
 
 ```python3
->> > for sentence in grammar.generate(3):
-    ...
-print(sentence)
+>>> for sentence in grammar.generate(3):
+...     print(sentence)
 ```
 
 The output could be the following:
