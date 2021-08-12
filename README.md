@@ -29,10 +29,10 @@ A ``PCFG`` can be initialized in the same way that an NLTK [probabilistic contex
 ```python3
 >>> from pcfg import PCFG
 >>> grammar = PCFG.fromstring("""
-... S -> Subject Action [1.0]
-... Subject -> "a cow" [0.7] | "some guy" [0.1] | "the woman" [0.2]
-... Action -> "eats lunch" [0.5] | "was here" [0.5]
-... """)
+S -> Subject Action [1.0]
+Subject -> "a cow" [0.7] | "some guy" [0.1] | "the woman" [0.2]
+Action -> "eats lunch" [0.5] | "was here" [0.5]
+""")
 ```
 
 To generate sentences, simply use the ``generate()`` method:
