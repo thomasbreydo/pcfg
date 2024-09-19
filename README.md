@@ -2,6 +2,7 @@ pcfg
 ====
 [![Documentation Status](https://readthedocs.org/projects/pcfg/badge/?version=latest)](https://pcfg.readthedocs.io/en/latest/?badge=latest)
 
+Still works in 2024!
 
 Description
 -----------
