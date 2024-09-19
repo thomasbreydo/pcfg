@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python 3.6
         uses: actions/setup-python@v2
         with:
-          python-version: "3.6"
+          python-version: "^3.6"
       - uses: abatilo/actions-poetry@v2.0.0
       
       - name: Lock dependencies
