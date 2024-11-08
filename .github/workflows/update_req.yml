@@ -5,6 +5,9 @@ name: "Update requirements.txt using poetry"
 # Controls when the action will run. 
 on: [push, workflow_dispatch, pull_request]
 
+env:
+  PYTHON_KEYRING_BACKEND: keyring.backends.fail.Keyring
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
